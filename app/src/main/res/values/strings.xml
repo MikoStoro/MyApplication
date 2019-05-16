@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Kalkulator statystyk: Remastered</string>
+    <string name="stat_vitality">Witalność</string>
+    <string name="stat_stamina">Wytrzymałość</string>
+    <string name="stat_will">Wola</string>
+    <string name="stat_strength">Siła</string>
+    <string name="stat_dexterity">Zręczność</string>
+    <string name="stat_intelligence">Inteligencja</string>
+    <string name="stat_agility">Zwinność</string>
+    <string name="stat_perception">Percepcja</string>
+    <string name="stat_swiftness">Chyżość</string>
+
+    <string name="stats_display">
+        Zdrowie 25%:  %1$d      S: %2$d Z: %3$d I: %4$d \n
+        Zdrowie 50%:  %5$d      S: %6$d Z: %7$d I: %8$d \n
+        Zdrowie 75%:  %9$d      S: %10$d Z: %11$d I: %12$d \n
+        Zdrowie 100%:  %13$d    S: %14$d Z: %15$d I: %16$d \n
+\n
+        Kondycja:  %17$d \n
+        Magia:  %18$d \n
+        Prędkość:  %19$d \n
+        Niezłomność:  %20$d \n
+\n
+        Blok:  %21$d \n
+        Unik:  %22$d \n
+        Celność:  D: %21$d  M: %24$d \n
+        Siła zaklęć:  %25$d \n
+        Ukrycie:  %26$d \n
+        Cios krytyczny:  W: %27$d  D: %28$d  M: %29$d
+    </string>
+
+    <string name="test_string"> abcdefg %1$d </string>
+</resources>
