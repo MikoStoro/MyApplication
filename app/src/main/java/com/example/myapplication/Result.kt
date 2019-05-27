@@ -80,7 +80,7 @@ class Result : AppCompatActivity() {
                    spirit = (sta + wil) / 4
 
 
-                   statsText.text =  """//resources.getString(R.string.test_string, stamina)
+                   statsText.text =  """
                Zdrowie 25%:  $health25      S: ${str/4} Z: ${dex/4} I: ${int/4}
                Zdrowie 50%:  $health50      S: ${str/2} Z: ${dex/2} I: ${int/2}
                Zdrowie 75%:  $health75      S: ${(str*3)/4} Z: ${(dex*3)/4} I: ${(int*3)/4}

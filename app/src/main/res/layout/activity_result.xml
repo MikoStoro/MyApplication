@@ -20,23 +20,26 @@
                     android:id="@+id/stats_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="23dp"/>
+                    android:textSize="25dp"/>
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom">
 
-            <Button
-                    android:id="@+id/returnBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Powrót"
-                    android:textAlignment="center"
-                    android:textSize="@dimen/font_size_2"
-                    />
-    </LinearLayout>
 </LinearLayout>
 </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+                android:id="@+id/returnBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Powrót"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_size_2"
+                android:layout_gravity="bottom"
+
+        />
+</LinearLayout>
 
 </LinearLayout>

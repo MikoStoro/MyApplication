@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         val editSwi = findViewById<EditText>(R.id.swi_edit)
 
         val calculate = findViewById<Button>(R.id.calculateBtn)
-        val resetBtn = findViewById<Button>(R.id.resetBtn)
+        val reset = findViewById<Button>(R.id.resetBtn)
 
 
         fun reset() {
@@ -76,55 +76,55 @@ class MainActivity : AppCompatActivity() {
 
         reset()
 
+
+
         calculate.setOnClickListener {
 
-                if (
-                    editVit.text.isNullOrEmpty() ||
-                    editSta.text.isNullOrEmpty() ||
-                    editWil.text.isNullOrEmpty() ||
-                    editStr.text.isNullOrEmpty() ||
-                    editDex.text.isNullOrEmpty() ||
-                    editInt.text.isNullOrEmpty() ||
-                    editAgi.text.isNullOrEmpty() ||
-                    editPer.text.isNullOrEmpty() ||
-                    editSwi.text.isNullOrEmpty()) {
+            if (
+                editVit.text.isNullOrEmpty() ||
+                editSta.text.isNullOrEmpty() ||
+                editWil.text.isNullOrEmpty() ||
+                editStr.text.isNullOrEmpty() ||
+                editDex.text.isNullOrEmpty() ||
+                editInt.text.isNullOrEmpty() ||
+                editAgi.text.isNullOrEmpty() ||
+                editPer.text.isNullOrEmpty() ||
+                editSwi.text.isNullOrEmpty()
+            ) {
 
-                    toast("Wprowadź wsystkie Atrybuty postaci!")
-                }
-                else {
-                    vit = Integer.parseInt(editVit.getText().toString())
-                    sta = Integer.parseInt(editSta.getText().toString())
-                    wil = Integer.parseInt(editWil.getText().toString())
-                    str = Integer.parseInt(editStr.getText().toString())
-                    dex = Integer.parseInt(editDex.getText().toString())
-                    int = Integer.parseInt(editInt.getText().toString())
-                    agi = Integer.parseInt(editAgi.getText().toString())
-                    per = Integer.parseInt(editPer.getText().toString())
-                    swi = Integer.parseInt(editSwi.getText().toString())
-
-
-                    val intent = Intent(calculate.context, Result::class.java)
-
-                    intent.putExtra("vit", vit)
-                    intent.putExtra("sta", sta)
-                    intent.putExtra("wil", wil)
-                    intent.putExtra("str", str)
-                    intent.putExtra("dex", dex)
-                    intent.putExtra("int", int)
-                    intent.putExtra("agi", agi)
-                    intent.putExtra("per", per)
-                    intent.putExtra("swi", swi)
+                toast("Wprowadź wsystkie Atrybuty postaci!")
+            } else {
+                vit = Integer.parseInt(editVit.getText().toString())
+                sta = Integer.parseInt(editSta.getText().toString())
+                wil = Integer.parseInt(editWil.getText().toString())
+                str = Integer.parseInt(editStr.getText().toString())
+                dex = Integer.parseInt(editDex.getText().toString())
+                int = Integer.parseInt(editInt.getText().toString())
+                agi = Integer.parseInt(editAgi.getText().toString())
+                per = Integer.parseInt(editPer.getText().toString())
+                swi = Integer.parseInt(editSwi.getText().toString())
 
 
-                    calculate.context.startActivity(intent)
-                }
+                val intent = Intent(calculate.context, Result::class.java)
 
-            resetBtn.setOnClickListener { reset() }
+                intent.putExtra("vit", vit)
+                intent.putExtra("sta", sta)
+                intent.putExtra("wil", wil)
+                intent.putExtra("str", str)
+                intent.putExtra("dex", dex)
+                intent.putExtra("int", int)
+                intent.putExtra("agi", agi)
+                intent.putExtra("per", per)
+                intent.putExtra("swi", swi)
 
 
+                calculate.context.startActivity(intent)
+            }
         }
-
+            reset.setOnClickListener {
+            reset()
+            toast("Atrybuty zresetowane")
         }
     }
-
+}
 
