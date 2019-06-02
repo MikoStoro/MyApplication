@@ -19,34 +19,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        var vit: Int = 0
-        var sta: Int = 0
-        var wil: Int = 0
-        var str: Int = 0
-        var dex: Int = 0
-        var int: Int = 0
-        var agi: Int = 0
-        var per: Int = 0
-        var swi: Int = 0
-
-        var health25: Int
-        var health50: Int
-        var health75: Int
-        var health100: Int
-        var magicka: Int
-        var stamina: Int
-        var speed: Int
-        var spirit: Int
-        var block: Int
-        var evade: Int
-        var accuracy: Int
-        var stealh: Int
-        var meleeCrit: Int
-        var magCrit: Int
-        var ranCrit: Int
-        var spellForce: Int
-        var magAccuracy: Int
-
+        var vit: Int
+        var sta: Int
+        var wil: Int
+        var str: Int
+        var dex: Int
+        var int: Int
+        var agi: Int
+        var per: Int
+        var swi: Int
 
         val editVit = findViewById<EditText>(R.id.vit_edit)
         val editSta = findViewById<EditText>(R.id.sta_edit)
