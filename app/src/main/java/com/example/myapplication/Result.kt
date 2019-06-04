@@ -69,7 +69,7 @@ class Result : AppCompatActivity() {
                    stamina = sta
                    speed = swi / 2
                    evade = (2 * agi + per) / 3
-                   block = (per * 2 + dex) / 3
+                   block = (per * 2 + dex) / 2
                    stealh = agi / 2
                    accuracy = (dex * 2 + per) / 3
                    magAccuracy = (wil + int) / 2
